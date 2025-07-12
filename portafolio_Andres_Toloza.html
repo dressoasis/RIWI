@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,22 +11,22 @@
 
 <body>
 
-  <!-- Capa de fondo borroso -->
+  <!-- Blurred background layer -->
   <div class="fondo"></div>
 
   <header>
-    <nav class="navbar">
-      <ul class="nav-links">
+    <nav class="navbar"><!-- Navigation bar container -->
+      <ul class="nav-links"><!-- Navigation links list -->
         <li><a href="#presentacion">About</a></li>
         <li><a href="#habilidades">Skills</a></li>
         <li><a href="#proyectos">Projects</a></li>
         <li><a href="#contacto">Contact</a></li>
       </ul>
-      <h1 class="nombre">Andrés Camilo Toloza</h1>
+      <h1 class="nombre">Andrés Camilo Toloza</h1><!-- Name displayed in navbar -->
     </nav>
   </header>
 
-  <section id="presentacion">
+  <section id="presentacion"><!-- About me section -->
     <h2>About Me</h2>
     <p>Hello, I’m Andrés Camilo Toloza, a web developer in training with a strong passion for technology, design, and creating digital solutions.</p>
     <p>I enjoy facing new challenges, constantly learning, and improving both my technical and creative skills.</p>
@@ -35,9 +35,9 @@
     <img src="imagenes/mi.imagen.jpg" alt="Photo of Andrés Toloza" width="200">
   </section>
 
-  <section id="habilidades">
+  <section id="habilidades"><!-- Technical skills section -->
     <h2>Technical Skills</h2>
-    <ul class="icon-habilidades">
+    <ul class="icon-habilidades"><!-- Skills icons list -->
       <li><img src="imagenes/html.png" alt="html"></li>
       <li><img src="imagenes/css.png" alt="css"></li>
       <li><img src="imagenes/javaS.png" alt="JavaScript"></li>
@@ -46,13 +46,13 @@
     </ul>
   </section>
 
-  <section id="proyectos">
+  <section id="proyectos"><!-- Projects section -->
     <h2>My Projects</h2>
     <h3>Portfolio Project</h3>
     <p>This project is a website where I showcase my professional profile, skills, and contact information.</p>
     <img src="imagenes/imagen.proyectos.jpg" alt="Portfolio project image" width="300">
 
-    <table>
+    <table><!-- Projects table -->
       <tr>
         <th>Project Name</th>
         <th>Technologies Used</th>
@@ -71,7 +71,7 @@
     </table>
   </section>
 
-  <section id="contacto">
+  <section id="contacto"><!-- Contact section -->
     <h2>Contact</h2>
     <form>
       <label for="nombre">Name:</label><br>
@@ -103,9 +103,9 @@
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        navbar.classList.add('scrolled'); // Add class when scrolled down
       } else {
-        navbar.classList.remove('scrolled');
+        navbar.classList.remove('scrolled'); // Remove class when at top
       }
     });
   
