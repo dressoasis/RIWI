@@ -50,8 +50,6 @@ body {
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
-
-    animation: fadeIn 2s;
 }
 
 #presentacion, #habilidades, #proyectos, table, #contacto {
@@ -138,6 +136,10 @@ body {
     border-radius: 50%;
     border: clamp(3px, 1vw, 7px) solid #00ffcc; /* Borde mínimo de 3px, 1% del ancho de la ventana, y máximo de 7px */
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+    transition: transform 0.3s ease;
+}
+#presentacion img:hover {
+    transform: scale(1.03);
 }
 /* ----------------- HABILIDADES ----------------- */
 #habilidades {
